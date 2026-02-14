@@ -355,12 +355,16 @@ function openScrapbook(icon, title){
   `).join("");
 
   const content = `
-    <div class="section">
-      <h2>Scrapbook</h2>
-      <p class="muted">Tap a photo to zoom. Replace placeholders with your real pics in <b>/media/photos</b> and update <b>data.js</b>.</p>
-    </div>
-    <div class="polaroids" id="sbGrid">${items}</div>
-  `;
+  <div class="section">
+    <h2>Scrapbook</h2>
+    <p class="muted">
+      Princess, tap any photo to zoom 🤍
+      <br/>
+      A little scrapbook of us. Gonna be my favorite thing to look back on.
+    </p>
+  </div>
+  <div class="polaroids" id="sbGrid">${items}</div>
+`;
 
   openWindow({
     id:"scrapbook",
