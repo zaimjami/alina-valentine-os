@@ -1,22 +1,23 @@
 :root{
-  /* brighter sage/blue base + Valentine pop */
   --sage:#a9d8c3;
   --sage2:#7fb9a1;
   --blue:#9db8ff;
   --blue2:#6f8fe8;
-  --val1:#ff2f6d;   /* stronger rose */
+
+  --val1:#ff2f6d;   /* rose */
   --val2:#ffb3c7;   /* blush */
-  --val3:#ffd6e3;   /* extra soft pink for glows */
+  --val3:#ffd6e3;
 
-  /* switch to dark text on light backgrounds */
-  --ink:#1b1b1f;
-  --glass:rgba(255,255,255,.72);
-  --glass2:rgba(255,255,255,.58);
-  --line:rgba(27,27,31,.12);
-  --text:rgba(27,27,31,.92);
-  --muted:rgba(27,27,31,.68);
+  /* KEEP WHITE TEXT (your UI is built for this) */
+  --ink:#0b0f12;
+  --glass:rgba(255,255,255,.10);
+  --glass2:rgba(255,255,255,.14);
+  --line:rgba(255,255,255,.16);
+  --text:rgba(255,255,255,.94);
+  --muted:rgba(255,255,255,.74);
 
-  --shadow: 0 20px 60px rgba(0,0,0,.10);
+  /* lighter shadow so it doesn't feel heavy */
+  --shadow: 0 18px 50px rgba(0,0,0,.28);
   --radius:22px;
 }
 
@@ -28,22 +29,31 @@ body{
   color:var(--text);
   overflow-x:hidden;
 
-  /* bright Valentine background */
+  /* dark but not depressing */
   background:
-    radial-gradient(1200px 700px at 15% 20%, rgba(255,47,109,.18), transparent 58%),
-    radial-gradient(900px 600px at 85% 25%, rgba(157,184,255,.18), transparent 62%),
-    radial-gradient(1100px 700px at 55% 95%, rgba(169,216,195,.22), transparent 58%),
-    linear-gradient(180deg, #fff7fb, #f7fbff);
+    radial-gradient(1100px 650px at 18% 18%, rgba(255,47,109,.22), transparent 60%),
+    radial-gradient(900px 600px at 82% 22%, rgba(157,184,255,.18), transparent 62%),
+    radial-gradient(1000px 700px at 55% 92%, rgba(169,216,195,.22), transparent 62%),
+    linear-gradient(180deg, #070912, #0a0c16);
+}
+
+#bg{position:fixed; inset:0; z-index:-3;}
+#stars{position:absolute; inset:0; width:100%; height:100%;}
+#grain{
+  position:absolute; inset:0;
+  background-image:url("assets/grain.svg");
+  opacity:.12; mix-blend-mode:overlay;
+  pointer-events:none;
 }
 #glow{
   position:absolute; inset:-20%;
   background:
     radial-gradient(60% 40% at 20% 20%, rgba(169,216,195,.55) 0%, rgba(169,216,195,0) 58%),
     radial-gradient(55% 40% at 80% 25%, rgba(157,184,255,.50) 0%, rgba(157,184,255,0) 60%),
-    radial-gradient(45% 45% at 55% 80%, rgba(255,47,109,.28) 0%, rgba(255,47,109,0) 62%),
-    radial-gradient(40% 35% at 50% 10%, rgba(255,214,227,.45) 0%, rgba(255,214,227,0) 60%);
-  filter: blur(36px);
-  opacity:1;
+    radial-gradient(48% 48% at 55% 80%, rgba(255,47,109,.32) 0%, rgba(255,47,109,0) 64%),
+    radial-gradient(40% 35% at 50% 10%, rgba(255,214,227,.28) 0%, rgba(255,214,227,0) 62%);
+  filter: blur(38px);
+  opacity: 1;
   pointer-events:none;
 }
 
