@@ -68,15 +68,18 @@ function initClock(){
   const clock = $("#clock");
   const dateLine = $("#dateLine");
   function render(){
-    const now = new Date();
-    const hh = String(now.getHours()).padStart(2,"0");
-    const mm = String(now.getMinutes()).padStart(2,"0");
-    clock.textContent = `${hh}:${mm}`;
-    const opts = { weekday:"long", month:"long", day:"numeric" };
-    dateLine.textContent = now.toLocaleDateString(undefined, opts);
-  }
-  render();
-  setInterval(render, 15_000);
+  const now = new Date();
+
+  // CST/CDT (America/Chicago) + 12-hour time
+  clock.textContent = now.toLocaleTimeString("en-US", {
+    timeZone: "America/Chicago",
+    hour: "numeric",
+    minute: "2-digit",
+    hour12: true
+  });
+
+  const opts = { weekday:"long", month:"long", day:"numeric", timeZone:"America/Chicago" };
+  dateLine.textContent = now.toLocaleDateString("en-US", opts);
 }
 
 // ---------- Toast ----------
