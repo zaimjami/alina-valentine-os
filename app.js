@@ -1135,16 +1135,22 @@ function stopMusic(){
 }
 
 // ---------- Boot ----------
+// ---------- Boot ----------
 function boot(){
-  initStars();
-  initClock();
-  initLightbox();
-  initUnlock();
+  try {
+    initStars();
+    initClock();
+    initLightbox();
+    initUnlock();
+  } catch(err){
+    console.error("Boot error:", err);
+  }
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  boot(); // run only after HTML exists
+  boot();
 
   const b = document.getElementById("returnLockBtn");
   if (b) b.addEventListener("click", returnToLock);
 });
+
