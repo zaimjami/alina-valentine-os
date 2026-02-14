@@ -406,24 +406,39 @@ function openLetter(icon, title){
       const box = $("#typeBox", body);
       let mode = "soft";
 
+      // increment this to cancel any in-progress typing
+      let typeJob = 0;
+
       async function type(text){
+        const job = ++typeJob;          // cancel previous, start new job id
         box.textContent = "";
         for(const ch of text){
+          if(job !== typeJob) return;   // cancelled -> stop immediately
           box.textContent += ch;
           await sleep(ch === "\n" ? 8 : 14);
-          // keep scroll pinned
           box.scrollTop = box.scrollHeight;
         }
       }
 
       await type(VAL.letter.soft);
 
-      $("#softBtn", body).addEventListener("click", ()=>{ mode="soft"; type(VAL.letter.soft); });
-      $("#goofyBtn", body).addEventListener("click", ()=>{ mode="goofy"; type(VAL.letter.goofy); });
-      $("#typeBtn", body).addEventListener("click", ()=>{ type(mode==="soft"?VAL.letter.soft:VAL.letter.goofy); });
+      $("#softBtn", body).addEventListener("click", ()=>{
+        mode="soft";
+        type(VAL.letter.soft);
+      });
+
+      $("#goofyBtn", body).addEventListener("click", ()=>{
+        mode="goofy";
+        type(VAL.letter.goofy);
+      });
+
+      $("#typeBtn", body).addEventListener("click", ()=>{
+        type(mode==="soft" ? VAL.letter.soft : VAL.letter.goofy);
+      });
     }
   });
 }
+
 
 // ---------- Reasons ----------
 function openReasons(icon, title){
