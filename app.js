@@ -120,7 +120,7 @@ function initUnlock(){
 
   const pass = (VAL?.passcode?.value || "").toLowerCase().trim();
 
-  $("#passDisplay").textContent = pass;
+  $("#passDisplay").textContent = "********";
 
   function unlock(){
     const v = (input.value || "").toLowerCase().replace(/\s+/g,"");
