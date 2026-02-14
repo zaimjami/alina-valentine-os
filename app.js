@@ -973,14 +973,17 @@ function openNikkah(icon, title){
     </div>
 
     <div class="section">
-      <h2>Extras</h2>
-      <p class="muted">Drop your video clips in <b>/media/videos</b> and link them in data.js if you want.</p>
-      <div class="btnRow">
-        <button class="btn sage" id="confettiBtn">confetti</button>
-        <button class="btn blue" id="copyLine">copy a message</button>
-      </div>
-    </div>
-  `;
+  <h2>Extras</h2>
+  <p class="muted">
+    Little bonus buttons because I can’t be normal 🤍
+    <br/>
+    If you find an easter egg… no you didn’t.
+  </p>
+  <div class="btnRow">
+    <button class="btn pink" id="confettiBtn">confetti</button>
+    <button class="btn sage" id="copyLine">copy a message</button>
+  </div>
+</div>
 
   openWindow({
     id:"nikkah",
