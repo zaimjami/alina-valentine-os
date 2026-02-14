@@ -2,6 +2,10 @@
 /* Valentine OS — pure HTML/CSS/JS (no build tools).
    Works on GitHub Pages because all paths are relative.
 */
+function returnToLock() {
+  localStorage.removeItem("unlocked"); // force passcode screen again
+  location.reload();
+}
 
 const $ = (sel, root=document) => root.querySelector(sel);
 const $$ = (sel, root=document) => [...root.querySelectorAll(sel)];
