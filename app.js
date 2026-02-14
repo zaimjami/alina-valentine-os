@@ -149,14 +149,6 @@ function initUnlock(){
     location.reload();
   });
 
-  // if already unlocked
-  if(store.get("unlocked", false)){
-    $("#lock").classList.add("hidden");
-    $("#home").classList.remove("hidden");
-    $("#home").setAttribute("aria-hidden","false");
-    initHome();
-  }
-}
 
 // ---------- Windows (modals) ----------
 function openWindow({id, title, icon, contentHTML, onMount}){
