@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#0f1b1b" />
+  <title>For Alina 💚</title>
+  <link rel="icon" href="assets/heart.svg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="bg">
+    <canvas id="stars"></canvas>
+    <div id="grain"></div>
+    <div id="glow"></div>
+  </div>
+
+  <!-- Lock screen -->
+  <main id="lock" class="screen">
+    <div class="lockTop">
+      <div class="pill">Zaim → Alina • Valentine OS</div>
+      <button id="soundToggle" class="iconBtn" aria-label="Sound">
+        <img src="assets/sound.svg" alt="" />
+      </button>
+    </div>
+
+    <section class="lockCard">
+      <div class="lockTime" id="clock">06:00</div>
+      <div class="lockDate" id="dateLine">Valentine Morning</div>
+
+      <div class="lockTitle">
+        <h1>Pick a passcode, princess 🫶</h1>
+        <p class="muted">Hint: our dramatic desi line that makes me fold instantly 😌</p>
+      </div>
+
+      <div class="passRow">
+        <input id="passInput" autocomplete="off" inputmode="text" placeholder="enter passcode…" />
+        <button id="unlockBtn" class="primary">Unlock</button>
+      </div>
+
+      <div class="tinyRow">
+        <button id="hintBtn" class="linkBtn">need a bigger hint?</button>
+        <button id="resetBtn" class="linkBtn">reset progress</button>
+      </div>
+
+      <div id="lockMsg" class="toast hidden" role="status"></div>
+
+      <div class="lockFooter">
+        <div class="chip">
+          <img src="assets/moon.svg" alt="" />
+          <span>80% English • thori si Roman Urdu</span>
+        </div>
+        <div class="chip">
+          <img src="assets/dahlia.svg" alt="" />
+          <span>Sage + blue + Valentine chaos</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="lockBottom">
+      <p class="muted">tap around. there are easter eggs. 🤫</p>
+    </div>
+  </main>
+
+  <!-- Home -->
+  <main id="home" class="screen hidden" aria-hidden="true">
+    <header class="topbar">
+      <div>
+        <div class="kicker">Welcome</div>
+        <h1>Pick an app, princess 🫶</h1>
+        <p class="muted">This is part scrapbook, part story, part chaos. Built by Zaim with way too much love.</p>
+      </div>
+      <div class="topActions">
+        <button id="openNowBtn" class="iconBtn" title="Open When…">
+          <img src="assets/envelope.svg" alt="" />
+        </button>
+        <button id="panicBtn" class="iconBtn" title="Emergency cuteness">
+          <img src="assets/sparkle.svg" alt="" />
+        </button>
+      </div>
+    </header>
+
+    <section class="grid" id="appGrid"></section>
+
+    <footer class="footer">
+      <div class="footerLeft">
+        <span class="pill small">Passcode: <span id="passDisplay">••••••••</span></span>
+        <span class="pill small">Easter egg: type <b>booty</b> 🤨</span>
+      </div>
+      <div class="footerRight">
+        <span class="muted">made for Alina (princess / aloo) • long distance, short on patience</span>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Window layer -->
+  <div id="windows" aria-live="polite"></div>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox hidden" aria-hidden="true">
+    <div class="lightboxInner">
+      <button id="lbClose" class="iconBtn" aria-label="Close"><img src="assets/close.svg" alt="" /></button>
+      <img id="lbImg" alt="" />
+      <div class="lbCaption">
+        <div id="lbTitle" class="lbTitle"></div>
+        <div id="lbText" class="muted"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Confetti layer -->
+  <canvas id="confetti" class="confetti"></canvas>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
