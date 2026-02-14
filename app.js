@@ -68,7 +68,8 @@ function initClock(){
   const clock = $("#clock");
   const dateLine = $("#dateLine");
 
-  // Force Central time (America/Chicago). In Feb this is CST.
+  if(!clock || !dateLine) return; // ← prevents crash
+
   const tz = "America/Chicago";
 
   const timeFmt = new Intl.DateTimeFormat("en-US", {
@@ -92,8 +93,6 @@ function initClock(){
   }
 
   render();
-
-  // update often so it never “sticks” at :00
   setInterval(render, 1000);
 }
 
