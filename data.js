@@ -1,7 +1,4 @@
 
-// Personalization + content lives here.
-// You can edit this file without touching the rest of the code.
-
 const VAL = {
   people: {
     herName: "Alina",
@@ -12,7 +9,7 @@ const VAL = {
   // Passcode gate
   passcode: {
     hintShort: "our dramatic desi line 😌",
-    hintLong: "type the phrase we say that basically means 'aaja meri jaan' (no spaces)",
+    hintLong: "type the phrase we say that basically means 'Come here my love' (no spaces and lower case)",
     value: "aajamerijaan" // <-- passcode (lowercase)
   },
 
@@ -51,7 +48,7 @@ const VAL = {
       media:{ src:"assets/placeholders/polaroid-2.svg", alt:"polaroid" }
     },
     {
-      title:"The night we opened up (father / half sister)",
+      title:"The night we opened up (shared our vulnerabilities)",
       when:"Week 2",
       text:"We didn’t just talk. We trusted. Main tumhara ho gaya right there.",
       media:{ src:"assets/placeholders/polaroid-3.svg", alt:"polaroid" }
@@ -65,13 +62,13 @@ const VAL = {
     {
       title:"Long distance rituals",
       when:"Always",
-      text:"Falling asleep together, brushing teeth together, reading Qur’an together. We’re far, but it’s still us.",
+      text:"Falling asleep together, brushing teeth together, reading Qur’an together, farting on facetime. We’re far, but it’s still us.",
       media:{ src:"assets/placeholders/polaroid-5.svg", alt:"polaroid" }
     },
     {
       title:"Memphis trips",
       when:"Visits",
-      text:"Hotels + cuddles + zoo sheep + Legos + Chipotle + movies + mosque in Collierville. Real life hits different.",
+      text:"Hotels + cuddles + zoo sheep + Legos + Chipotle + movies + mosque in Collierville. Real life w you just hit different.",
       media:{ src:"assets/placeholders/polaroid-6.svg", alt:"polaroid" }
     },
   ],
