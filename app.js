@@ -263,8 +263,8 @@ function emergencyCuteness(customText){
     "hi princess 🤍",
     "if you're reading this: you are loved.",
     "main tumse bohot zyada pyaar karta hoon.",
-    "aaja meri jaan.",
-    "also… you're not a potato. stop it.",
+    "you are my forever.",
+    "also… you're fat and ugly.",
   ];
   const msg = customText || lines.join("\n");
   fireConfetti();
