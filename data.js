@@ -88,13 +88,13 @@ const VAL = {
     soft:
 `Alina…
 
-You came into my life like a quiet kind of mercy. Soft, steady, and somehow strong enough to make me feel safe.
+You came into my life like a quiet kind of mercy. Soft, steady and somehow strong enough to make me feel safe. I dont know how I handle you ngl. Because you are way too much for me in the best way. 
 
-I still think about that first FaceTime — you yapping about your symposium like it was the most important thing in the world — and it *was*, because it was you. The real start.
+I still think about that first FaceTime. You yapping about your symposium like it was the most important thing in the world. And yk what it was. Because it was you. The real start. My princess. 
 
-I love you for the way you care, the way you overthink, the way you try even when your mind is loud. Main tumse bohot zyada pyaar karta hoon. I love you more than you think I do.
+I love you for the way you care, the way you overthink, the way you try even when your mind is loud. Main tumhari har soch par heraan hota hu. I love you more than you think I do.
 
-Long distance is annoying, but it’s never made you feel far. You’re in my routines: in my prayers, in the way I soften, in the way I plan.
+Ik that long distance is annoying but it’s never made you feel far. You’re in my routines: in my prayers, in the way I softe, in the way I plan, in the way I shower and sleep. 
 
 Thank you for letting me open up. Thank you for healing me in ways you didn’t even realize you were healing me.
 
@@ -103,10 +103,10 @@ Your Zaim 🌙`,
     goofy:
 `Princess,
 
-Official statement: you told me you loved me first… but I need you to understand — I love you MORE. Like, objectively. Like, by law.
+Official statement: you told me you loved me first… but I need you to know. I love you MORE. Like objectively. Like by law. In fact because I said so therefore!
 
 I miss you in the stupid little ways:
-- the way you call yourself a potato (lies)
+- the way you call yourself a potato (lies you make me brick hard)
 - the way you run and act like you’re not iconic
 - the way your laugh turns into “kekeke” and suddenly I’m ruined
 - the way we read Qur’an together then somehow find a verse with “booty” and lose it 😭
@@ -117,7 +117,7 @@ Also I’m still proud of my first date strategy:
 (3) survived the sushi restaurant lady’s stealth mode
 (4) late night McDonalds like we’re in a movie
 
-Aaja meri jaan.
+My 5'6 brown baddie I finally found you
 
 Love, Zaim (your certified simp) 🤍`
   },
@@ -125,7 +125,7 @@ Love, Zaim (your certified simp) 🤍`
   // Reasons generator
   reasons: [
     "You make me feel safe.",
-    "Your brain is beautiful — even when it overthinks.",
+    "Your brain is beautiful and yes even when it overthinks.",
     "Your kindness has weight. It changes people.",
     "You’re art + science at the same time.",
     "You’re my peace and my favorite chaos.",
@@ -141,7 +141,7 @@ Love, Zaim (your certified simp) 🤍`
     "I will be gentle with your anxious days.",
     "I will show up, not just say I will.",
     "I will protect our love from ego and pride.",
-    "I will keep choosing you — even when distance is annoying.",
+    "I will keep choosing you. Even when distance is annoying.",
     "I will make you feel beautiful on the days you don’t.",
     "I will keep us close to Allah, not just close to each other.",
     "I will laugh with you (even when it’s kekeke for 30 minutes).",
@@ -177,12 +177,14 @@ Love, Zaim (your certified simp) 🤍`
       letter:
 `Aloo…
 
-I miss you too. Come here. Aaja meri jaan.
+I miss you too. Come here. 
+
+You're always in my thoughts even if we are miles way
 
 Close your eyes and imagine:
-my hand on your cheek, forehead kiss, and you doing that little smile you try to hide.
+my hand on your cheek, forehead kiss and you doing that little smile you try to hide.
 
-Main tumhara hoon.
+Main tumhara hoon. Forever
 `
     },
     {
@@ -224,7 +226,7 @@ Allah is near.
 Remember when you got high and wouldn’t stop laughing and I was like:
 “ok… so this is my life now.”
 
-I love your laugh. It’s my favorite sound.
+I love your laugh. It’s my favorite sound. 
 `
     },
     {
