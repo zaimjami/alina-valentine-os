@@ -148,7 +148,7 @@ function initUnlock(){
     localStorage.clear();
     location.reload();
   });
-
+}
 
 // ---------- Windows (modals) ----------
 function openWindow({id, title, icon, contentHTML, onMount}){
