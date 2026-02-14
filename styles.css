@@ -419,54 +419,68 @@ hr.sep{border:none; border-top:1px dashed rgba(255,255,255,.20); margin:10px 0}
 }
 #catchCanvas{width:100%; height:340px; display:block}
 .confetti{position:fixed; inset:0; pointer-events:none; z-index:80}
-/* ===== Mobile layout fix (prevents overlapping tiles) ===== */
+/* ===== Mobile: stack hero on top, apps underneath (no overlap) ===== */
 @media (max-width: 520px){
 
-  /* give the page breathing room on iPhone */
+  /* general page padding */
   .screen{
     padding: 14px !important;
     align-items: flex-start !important;
+    justify-content: flex-start !important;
   }
 
+  /* IMPORTANT: stack the top area instead of side-by-side */
   .topbar{
     width: 100% !important;
-    margin: 56px auto 12px !important;
+    margin: 64px 0 14px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
   }
 
+  /* some templates have a left/right split inside topbar */
+  .topbar .left,
+  .topbar .right{
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* make the header readable + stop giant overflow */
+  .topbar h1{
+    font-size: 40px !important;
+    line-height: 1.02 !important;
+    margin: 0 !important;
+  }
+
+  /* keep description from colliding */
+  .topbar p{
+    margin: 10px 0 0 !important;
+    max-width: 100% !important;
+  }
+
+  /* apps grid goes BELOW the hero, full width */
   .grid{
     width: 100% !important;
-    grid-template-columns: 1fr !important; /* single column */
+    margin: 0 !important;
+    grid-template-columns: 1fr !important;
     gap: 12px !important;
   }
 
   .appCard{
     grid-column: 1 / -1 !important;
     width: 100% !important;
-    padding: 14px !important;
-    border-radius: 20px !important;
   }
 
-  .appCard .icon{
-    width: 42px !important;
-    height: 42px !important;
-    border-radius: 14px !important;
+  /* Any floating/fixed hint chips should wrap and not cover content */
+  .pill{
+    position: static !important;
+    max-width: 100% !important;
+    white-space: normal !important;
   }
 
-  .topActions{
-    width: 100% !important;
-    justify-content: flex-start !important;
-    flex-wrap: wrap !important;
-  }
-
-  /* keep your “Return to Lock Screen” button from covering content */
+  /* Keep your return button above Safari bar */
   #returnLockBtn{
     right: 12px !important;
-    bottom: 88px !important; /* lift above Safari bar */
-  }
-
-  /* that passcode/easter egg bubble is covering cards on mobile */
-  .pill{
-    max-width: calc(100vw - 28px) !important;
-    white-space: normal !important;
+    bottom: 88px !important;
   }
 }
