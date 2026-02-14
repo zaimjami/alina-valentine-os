@@ -67,19 +67,34 @@ function initStars(){
 function initClock(){
   const clock = $("#clock");
   const dateLine = $("#dateLine");
-  function render(){
-  const now = new Date();
 
-  // CST/CDT (America/Chicago) + 12-hour time
-  clock.textContent = now.toLocaleTimeString("en-US", {
-    timeZone: "America/Chicago",
+  // Force Central time (America/Chicago). In Feb this is CST.
+  const tz = "America/Chicago";
+
+  const timeFmt = new Intl.DateTimeFormat("en-US", {
+    timeZone: tz,
     hour: "numeric",
     minute: "2-digit",
     hour12: true
   });
 
-  const opts = { weekday:"long", month:"long", day:"numeric", timeZone:"America/Chicago" };
-  dateLine.textContent = now.toLocaleDateString("en-US", opts);
+  const dateFmt = new Intl.DateTimeFormat("en-US", {
+    timeZone: tz,
+    weekday: "long",
+    month: "long",
+    day: "numeric"
+  });
+
+  function render(){
+    const now = new Date();
+    clock.textContent = timeFmt.format(now);
+    dateLine.textContent = dateFmt.format(now);
+  }
+
+  render();
+
+  // update often so it never “sticks” at :00
+  setInterval(render, 1000);
 }
 
 // ---------- Toast ----------
