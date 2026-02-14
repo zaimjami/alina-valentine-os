@@ -269,12 +269,3 @@ And I’m going to love you with amanah until then.
 
   // Memory match tiles (emoji pairs)
   memory: ["💚","💚","🫶","🫶","🌙","🌙","🏃‍♀️","🏃‍♀️","🧠","🧠","🍪","🍪","🎹","🎹","🌸","🌸","🧩","🧩"],
-
-  // Music config (drop your own audio files if you want)
-  music: {
-    note:"You can add your own audio files to /media/audio (no copyrighted uploads).",
-    tracks:[
-      { title:"(optional) Your audio here", file:"media/audio/track1.mp3" }
-    ]
-  }
-};
