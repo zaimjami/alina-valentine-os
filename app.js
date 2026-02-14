@@ -1102,3 +1102,8 @@ function boot(){
   initUnlock();
 }
 boot();
+
+document.addEventListener("DOMContentLoaded", () => {
+  const b = document.getElementById("returnLockBtn");
+  if (b) b.addEventListener("click", returnToLock);
+});
