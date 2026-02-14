@@ -35,53 +35,53 @@ const VAL = {
 
   // Timeline events (edit dates/text freely)
   timeline: [
-    {
-      title:"We “met at a research symposium” (aka muzz)",
-      when:"Week 0",
-      text:"Neuroscience princess meets comp sci boy. We keep the symposium cover story because it’s funnier 😭.",
-      media:{ src:"assets/placeholders/polaroid-1.svg", alt:"polaroid" }
-    },
-    {
-      title:"First FaceTime (you yapped about the symposium)",
-      when:"Week 1",
-      text:"Somehow your yapping was the exact moment I felt safe enough to like… actually fall.",
-      media:{ src:"assets/placeholders/polaroid-2.svg", alt:"polaroid" }
-    },
-    {
-      title:"The night we opened up (shared our vulnerabilities)",
-      when:"Week 2",
-      text:"We didn’t just talk. We trusted. Main tumhara ho gaya right there.",
-      media:{ src:"assets/placeholders/polaroid-3.svg", alt:"polaroid" }
-    },
-    {
-      title:"First note you sent me",
-      when:"Week 3",
-      text:"I still remember reading it like it was oxygen. Soft, sincere, you.",
-      media:{ src:"assets/placeholders/polaroid-4.svg", alt:"polaroid" }
-    },
-    {
-      title:"Long distance rituals",
-      when:"Always",
-      text:"Falling asleep together, brushing teeth together, reading Qur’an together, farting on facetime. We’re far, but it’s still us.",
-      media:{ src:"assets/placeholders/polaroid-5.svg", alt:"polaroid" }
-    },
-    {
-      title:"Memphis trips",
-      when:"Visits",
-      text:"Hotels + cuddles + zoo sheep + Legos + Chipotle + movies + mosque in Collierville. Real life w you just hit different.",
-      media:{ src:"assets/placeholders/polaroid-6.svg", alt:"polaroid" }
-    },
-  ],
+  {
+    title:"We “met at a research symposium” (aka muzz)",
+    when:"Week 0",
+    text:"Neuroscience princess meets comp sci boy. We keep the symposium cover story because it’s funnier 😭.",
+    media:{ src:"media/photos/t01-muzz-symposium.jpg", alt:"muzz cover story" }
+  },
+  {
+    title:"First FaceTime (you yapped about the symposium)",
+    when:"Week 1",
+    text:"Somehow your yapping was the exact moment I felt safe enough to like… actually fall.",
+    media:{ src:"media/photos/t02-first-facetime.jpg", alt:"first facetime" }
+  },
+  {
+    title:"The night we opened up (shared our vulnerabilities)",
+    when:"Week 2",
+    text:"We didn’t just talk. We trusted. Main tumhara ho gaya right there.",
+    media:{ src:"media/photos/t03-opened-up.jpg", alt:"opened up" }
+  },
+  {
+    title:"First note you sent me",
+    when:"Week 3",
+    text:"I still remember reading it like it was oxygen. Soft, sincere, you.",
+    media:{ src:"media/photos/t04-first-note.jpg", alt:"first note" }
+  },
+  {
+    title:"Long distance rituals",
+    when:"Always",
+    text:"Falling asleep together, brushing teeth together, reading Qur’an together, farting on facetime. We’re far, but it’s still us.",
+    media:{ src:"media/photos/t05-long-distance.jpg", alt:"long distance" }
+  },
+  {
+    title:"Memphis trips",
+    when:"Visits",
+    text:"Hotels + cuddles + zoo sheep + Legos + Chipotle + movies + mosque in Collierville. Real life w you just hit different.",
+    media:{ src:"media/photos/t06-memphis-trip.jpg", alt:"memphis trip" }
+  },
+],
 
-  // Scrapbook items (replace src with your real files in /media/...)
-  scrapbook: [
-    { src:"media/photos/photo1.jpg", title:"Us", text:"Replace with a real photo. Caption: ‘my favorite view.’" },
-    { src:"media/photos/photo2.jpg", title:"Her", text:"Replace with her solo pic. Caption: ‘princess energy.’" },
-    { src:"media/photos/photo3.jpg", title:"Chaos", text:"Replace with a chat screenshot. Caption: ‘kekeke.’" },
-    { src:"assets/placeholders/polaroid-2.svg", title:"Placeholder", text:"Drop your pics into /media/photos and update this list." },
-    { src:"assets/placeholders/polaroid-3.svg", title:"Placeholder", text:"You said you have 15–20. Perfect." },
-    { src:"assets/placeholders/polaroid-4.svg", title:"Placeholder", text:"Mix: you two + her + chats + travel + notes." },
-  ],
+// Scrapbook items (replace src with your real files in /media/photos)
+scrapbook: [
+  { src:"media/photos/s01-us-favorite.jpg", title:"Us", text:"my favorite view." },
+  { src:"media/photos/s02-her-princess.jpg", title:"Her", text:"princess energy. aloo energy. unstoppable." },
+  { src:"media/photos/s03-kekeke-chat.jpg", title:"Chaos", text:"kekeke. that’s it. that’s the whole caption." },
+  { src:"media/photos/s04-zoo-sheep.jpg", title:"Zoo day", text:"petting sheep with you felt like a preview of my life." },
+  { src:"media/photos/s05-legos.jpg", title:"Lego architects", text:"we build legos but also… we’re building a life." },
+  { src:"media/photos/s06-mosque-collierville.jpg", title:"Mosque in Collierville", text:"barakah vibes. calm with you." },
+],
 
   // Letter (soft + goofy versions)
   letter: {
