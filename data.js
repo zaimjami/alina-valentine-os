@@ -267,7 +267,7 @@ And I’m going to love you with amanah until then.
   ],
 
   // Memory match tiles (emoji pairs)
-  memory: ["💚","💚","🫶","🫶","🌙","🌙","🏃‍♀️","🏃‍♀️","🧠","🧠","🍪","🍪","🎹","🎹","🌸","🌸","🧩","🧩"],
+  memory: ["💚","💚","🫶","🫶","🌙","🌙","🏃‍♀️","🏃‍♀️","🧠","🧠","🍪","🍪","🎹","🎹","🌸","🌸","🧩","🧩"]
 
 /* Valentine OS — pure HTML/CSS/JS (no build tools).
    Works on GitHub Pages because all paths are relative.
