@@ -420,67 +420,55 @@ hr.sep{border:none; border-top:1px dashed rgba(255,255,255,.20); margin:10px 0}
 #catchCanvas{width:100%; height:340px; display:block}
 .confetti{position:fixed; inset:0; pointer-events:none; z-index:80}
 /* ===== Mobile: stack hero on top, apps underneath (no overlap) ===== */
+/* ===== PERFECT MOBILE STACK FIX ===== */
 @media (max-width: 520px){
 
-  /* general page padding */
+  /* Entire home screen becomes vertical */
   .screen{
-    padding: 14px !important;
-    align-items: flex-start !important;
-    justify-content: flex-start !important;
+    display:flex !important;
+    flex-direction:column !important;
+    align-items:flex-start !important;
+    justify-content:flex-start !important;
+    padding:18px !important;
   }
 
-  /* IMPORTANT: stack the top area instead of side-by-side */
+  /* HERO TEXT AREA */
   .topbar{
-    width: 100% !important;
-    margin: 64px 0 14px !important;
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 10px !important;
+    width:100% !important;
+    margin-top:70px !important;
+    margin-bottom:20px !important;
+    display:block !important;
   }
 
-  /* some templates have a left/right split inside topbar */
-  .topbar .left,
-  .topbar .right{
-    width: 100% !important;
-    max-width: 100% !important;
-  }
-
-  /* make the header readable + stop giant overflow */
-  .topbar h1{
-    font-size: 40px !important;
-    line-height: 1.02 !important;
-    margin: 0 !important;
-  }
-
-  /* keep description from colliding */
-  .topbar p{
-    margin: 10px 0 0 !important;
-    max-width: 100% !important;
-  }
-
-  /* apps grid goes BELOW the hero, full width */
+  /* CRITICAL: cancel any desktop positioning */
+  .topbar,
   .grid{
-    width: 100% !important;
-    margin: 0 !important;
-    grid-template-columns: 1fr !important;
-    gap: 12px !important;
+    position:static !important;
+    transform:none !important;
   }
 
+  /* APPS GRID GOES UNDER TEXT */
+  .grid{
+    width:100% !important;
+    margin-top:12px !important;
+  }
+
+  /* DO NOT shrink icons — just full width cards */
   .appCard{
-    grid-column: 1 / -1 !important;
-    width: 100% !important;
+    grid-column:1 / -1 !important;
+    width:100% !important;
   }
 
-  /* Any floating/fixed hint chips should wrap and not cover content */
+  /* Prevent passcode bubble from covering hero text */
   .pill{
-    position: static !important;
-    max-width: 100% !important;
-    white-space: normal !important;
+    position:static !important;
+    margin-top:10px !important;
+    max-width:100% !important;
   }
 
-  /* Keep your return button above Safari bar */
+  /* Keep lock button above Safari bar */
   #returnLockBtn{
-    right: 12px !important;
-    bottom: 88px !important;
+    bottom:88px !important;
+    right:12px !important;
   }
 }
