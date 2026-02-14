@@ -1139,12 +1139,12 @@ function boot(){
   initStars();
   initClock();
   initLightbox();
-  initSound();
   initUnlock();
 }
-boot();
 
 document.addEventListener("DOMContentLoaded", () => {
+  boot(); // run only after HTML exists
+
   const b = document.getElementById("returnLockBtn");
   if (b) b.addEventListener("click", returnToLock);
 });
